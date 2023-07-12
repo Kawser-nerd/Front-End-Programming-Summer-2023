@@ -21,8 +21,19 @@ Footer
         <title>My First Web Page</title>
         
     </head>
-    
+    <nav> <!-- This is navigation section. We are going to put all the navigated pages/subpages in this section
+To put some additional space in between two texts we need to use &nbsp -->
+        <a href="index.html">Home</a> &nbsp <a href="secondPage.html">SecondPage</a>
+        
+    </nav>
     <body>
+        <br>
+        <br>
+        
+        <!-- Adding Image
+To add an image in Html, we need to use <img> html tag. In that tag, we use src to provide the link of the image and width to define the view area of the image. we don't need to close image tag, like line break tag -->
+        <img src="vaniercollege.jpg" width="100%">
+        
         <!-- Body Section. All the page contents are provided over here -->
         This is our first web page. Good luck to us.
         
@@ -50,17 +61,65 @@ materials. <!-- <b> represents bold content .. instead of <b> we can use <strong
         </p>
 
         <h4>Online Resources</h4>
-        All the <em><b>class recordings, required documentation </b> and tutorials</em> will be provided to students throughout the semester. The instructor is open to use and refer any <i>online tutorials</i> whenever required.
+        All the <em><b>class recordings<sup>1</sup>, required documentation </b> and tutorials</em> will be provided to students throughout the semester. The instructor is open to use and refer any <i>online tutorials</i> whenever required.
         
         <!-- <em> or <i> tag makes the content emphasized or italic. It is used to see the contents with additional focus-->
         
-        <h4>In-Class Notes and Codes</h4>
-        will be provided throughout the semester.
+        <!-- BlockQuote Element -->
+        <blockquote>
+            Online resources are not always validated. You have to check it first. And at the time of using it, you have to see the appearance of the contents by yourself.
+        </blockquote>
+        
+        <h4>In-Class Notes and Codes<sup>&copy;</sup></h4>
+        will be provided throughout the semester. The class notes are registered under the Vanier College<sub>&reg;</sub> properties.<br>
+        The class codes, examples and class recordings are going to be provided in <a href="https://github.com/Kawser-nerd/Front-End-Programming-Summer-2023">GitHub</a> and <a href="https://youtube.com/playlist?list=PLwKpGi8r7u0TT9Wrv0XkXbkIxHm-O-iNz">Youtube</a> respectively.
+        
+        <h2>Teaching Methodologies</h2>
+        
+        It is recommended that material be addressed in the following order: 
+        <ol><!-- This is OrderedList. All the list items will be listed with numbers from 1 to infinite-->
+            <li>Introduction to the Topics of Web</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript/JQuery</li>
+            <li>AJAX</li>
+            <li>ReactJS</li>
+        </ol>
+        
+        <h4>Assessments</h4>
+        For exams, it is recommended to have a combination of written and lab exam. In addition to that, the teacher will ensure the following competencies:
+        <ul> <!-- UnOrdered List.. Its the beginning declaration about the upcoming list
+Inside the list, each element need to be surrounded by the <li> tag-->
+            <li>Problem Solving</li>
+            <li>Lecture</li>
+            <li>Project-Based Learning</li>
+            <li>Brainstorming</li>
+            <li>Modeling/Demonstration</li>
+        </ul>
+
+        <h2>Assesment &amp; Evaluation</h2>
+        <dl><!-- This is description list. WE are going to add a term and follow-by definition structure in the HTML page. For that, we need to use Description List-->
+            <dt> <!-- represents term/phrase tag. The short section will be added here-->
+                Late Arrival
+            </dt>
+            <dd> <!-- This is detailed description of the term we have added before. In this place, we are going to put the longer description which will explain the term -->
+                If a student arrives late (after the scheduled class time), the instructor has the right to refuse entry until following the break.
+            </dd>
+            <dt>Missing Evaluation </dt>
+            <dd>If a student misses a summative evaluation, he/she must justify their absence with a medical note within 3 days of the missed evaluation. Failure to do so will result in zero.</dd>
+            <dt>Class Attendance</dt>
+            <dd>Attendance is done orally during the class. Zoom log does not count as participation. Attendance can be done at any time in the classroom or multiple times. Not being responsive to the instructor when asked is considered an absence from the session.</dd>
+        </dl>
         
     </body>
     
     <footer>
     <!-- Footer Section.. You can put the lower part information in this section -->
+        <sup>1</sup> Class recording are going to be uploaded in Youtube playlist. 
+        
+        <h3>Contact to the Teacher</h3>
+        Kawser Wazed Nafi <br>
+        e-Mail: <a href="mailto:nafik@vaniercollege.qc.ca">nafik@vaniercollege.qc.ca</a> <br>
+        Phone: <a href="tel:444-555-8888"><i>444-555-8888</i></a>
     </footer>
     
 </html>
