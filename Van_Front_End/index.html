@@ -20,13 +20,74 @@ Footer
         <!-- To add a title/ name for your application, you have to put a title in the page.. YOu can use different title for different pages. Once you put the title, it will put the name on the browser tab-->
         <title>My First Web Page</title>
         
+        <!-- Embedded Style CSS -->
+        <!-- To do the embedded style css, you fisrt need to call the style tags and then you need to put all the style contents/properties one after another in the css file-->
+        
+    <!--    <style>
+            /*
+            
+            this tag needs to be present inside head element
+            
+            This is the place to put the CSS properties one after another. We need to use different element tags and CSS class/id properties over here. If we are going to add CSS properties with HTML element, we need to call the element first and then we need to send the properties over there. We need to use Curly braces to set the scope of the css properties
+            
+            N.B: The name of the HTML elements and style section tag name needs to be same*/
+            
+            body{
+                background-color: beige;
+                font-family: sans-serif;
+                font-size: 14px;
+            }
+            
+            blockquote{
+                font-family: cursive;
+                font-size: 17px;
+                color: brown;
+                border: 2px dashed blue;
+            }
+            /* 
+            If same name element is used multiple times in a page, then if you call the element once, the CSS properties will be adapted for all of the places. That means, one html element based css will impact all othe same type of elements
+            
+            to apply individual CSS properties for each of the same-named-element seperately, we need to create CSS class. And then we need to pass that class along with CSS properties for that class to the targeted div to apply them properly. The same CSS class can be applied in different same named HTML elements
+            
+            to create a css class, we need to follow the following syntax
+            
+            .class_name{}
+            
+            this means, we first need to put a dot and then the class name followed by curly braces to define the scope.
+            
+            */
+            
+            .teach_method{
+                background-color: aquamarine;
+                font-family:Arial, sans-serif, Courier new;
+                font-style:oblique;
+            }
+            
+            .contact_teacher{
+                color: aliceblue;
+                background-image: url(contactImage.jpg);
+                font-family: monospace;
+                font-size: 10px;
+            }
+        </style>-->
+        
+        <!-- External CSS-->
+        <!-- For-External CSS, we need to link the css file we have created for our work. To do that, we need to use link tag and in the link tag, we need to pass the file name. we also have to define the type of the file we are going to add/link in the page with rel property-->
+        
+        <link rel="stylesheet" href="myCSS.css">
+        
     </head>
     <nav> <!-- This is navigation section. We are going to put all the navigated pages/subpages in this section
 To put some additional space in between two texts we need to use &nbsp -->
         <a href="index.html">Home</a> &nbsp <a href="secondPage.html">SecondPage</a>
         
     </nav>
+    <!-- Inline CSS -->
+    <!-- In inline CSS, we put the CSS properties/ formatting styles with the HTML elements directly. We put all the style property-value pair in the same line with HTML elements-->
+    <!--<body style="background-color: beige; font-family: sans-serif; font-size: 14px">-->
     <body>
+            
+        <!-- Body Section. All the page contents are provided over here -->
         <br>
         <br>
         
@@ -34,7 +95,9 @@ To put some additional space in between two texts we need to use &nbsp -->
 To add an image in Html, we need to use <img> html tag. In that tag, we use src to provide the link of the image and width to define the view area of the image. we don't need to close image tag, like line break tag -->
         <img src="vaniercollege.jpg" width="100%">
         
-        <!-- Body Section. All the page contents are provided over here -->
+        <!-- DIV Element-->
+        <!-- Every web page has different contents to present, as well as it has different stuffs to represent in different style. To do that, we need to divide the work space on a web page with div. Div helps us to seperate the contents of one web page in different sections/ parts -->
+        <div class="teach_method">
         This is our first web page. Good luck to us.
         
         <!-- To add/separate lines from one to another, we need to use line breaker, which is <br> tag. This tag, whenever you use, will add a new line to the content, will add a line breaker and will bring the following contents to the new line-->
@@ -44,6 +107,9 @@ To add an image in Html, we need to use <img> html tag. In that tag, we use src 
         This is third line in our web page.
         <br>
         This is fourth line in our web page.
+        </div>
+        
+        <div>
         
         <h1>Required Texts</h1><!-- Highest Level Heading.. Main Section
 
@@ -66,6 +132,7 @@ materials. <!-- <b> represents bold content .. instead of <b> we can use <strong
         <!-- <em> or <i> tag makes the content emphasized or italic. It is used to see the contents with additional focus-->
         
         <!-- BlockQuote Element -->
+        <!--<blockquote style="font-family: cursive; font-size: 17px; letter-spacing: 2px; border: 2px solid blue; color: brown">-->
         <blockquote>
             Online resources are not always validated. You have to check it first. And at the time of using it, you have to see the appearance of the contents by yourself.
         </blockquote>
@@ -73,7 +140,10 @@ materials. <!-- <b> represents bold content .. instead of <b> we can use <strong
         <h4>In-Class Notes and Codes<sup>&copy;</sup></h4>
         will be provided throughout the semester. The class notes are registered under the Vanier College<sub>&reg;</sub> properties.<br>
         The class codes, examples and class recordings are going to be provided in <a href="https://github.com/Kawser-nerd/Front-End-Programming-Summer-2023">GitHub</a> and <a href="https://youtube.com/playlist?list=PLwKpGi8r7u0TT9Wrv0XkXbkIxHm-O-iNz">Youtube</a> respectively.
+        </div>
         
+        <!--<div style="text-align: justify; background-color: aquamarine; display: block; ">-->
+        <div class="teach_method">
         <h2>Teaching Methodologies</h2>
         
         It is recommended that material be addressed in the following order: 
@@ -95,7 +165,9 @@ Inside the list, each element need to be surrounded by the <li> tag-->
             <li>Brainstorming</li>
             <li>Modeling/Demonstration</li>
         </ul>
-
+        </div>
+        
+        <div>
         <h2>Assesment &amp; Evaluation</h2>
         <dl><!-- This is description list. WE are going to add a term and follow-by definition structure in the HTML page. For that, we need to use Description List-->
             <dt> <!-- represents term/phrase tag. The short section will be added here-->
@@ -109,17 +181,21 @@ Inside the list, each element need to be surrounded by the <li> tag-->
             <dt>Class Attendance</dt>
             <dd>Attendance is done orally during the class. Zoom log does not count as participation. Attendance can be done at any time in the classroom or multiple times. Not being responsive to the instructor when asked is considered an absence from the session.</dd>
         </dl>
-        
+        </div>
     </body>
     
     <footer>
     <!-- Footer Section.. You can put the lower part information in this section -->
         <sup>1</sup> Class recording are going to be uploaded in Youtube playlist. 
-        
+        <!--<div style="font-family: monospace; font-display: block; font-weight: 300;">-->
+        <div id="contact_teacher">
         <h3>Contact to the Teacher</h3>
         Kawser Wazed Nafi <br>
         e-Mail: <a href="mailto:nafik@vaniercollege.qc.ca">nafik@vaniercollege.qc.ca</a> <br>
         Phone: <a href="tel:444-555-8888"><i>444-555-8888</i></a>
+        </div>
     </footer>
+    
+
     
 </html>
