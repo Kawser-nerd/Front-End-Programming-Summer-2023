@@ -8,12 +8,14 @@
             
             body{ /* HTML Element tag name */
                 /*background-color: beige;*/
-                /*background-image: url(../images/contactImage.jpg);*/
+                background-image: url(../images/contactImage.jpg);
                 font-family: sans-serif;
                 font-size: 14px;
                 margin-left: auto;
                 margin-right: auto;
                 width: 90%;
+                
+                
                 
                 
             }
@@ -37,14 +39,20 @@
 
 .background_page{
     /*background-image: url(../images/contactImage.jpg);*/
-    background-color: beige
+    background-color: beige;
+    opacity:0.75;
     
+}
+footer{
+    background-color: beige;
+    opacity: 0.75;
 }
 
 .header1{
     background-color: aqua;
 }
 nav a{ /*decendent CSS properties. This only works when you point a tag which is inside another big element/ to point one element inside a nested element */
+    color: aliceblue;
     text-decoration: none;
 }
             /* 
