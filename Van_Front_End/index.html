@@ -16,6 +16,16 @@ Footer
     In addition to that, if we are going to add any external library/framework like bootstrap/jquery, we need to give the link of those frameworks inside this head section-->
         
         <meta charset="utf-8">
+        <!-- Meta Information-->
+        <!-- We can provide a group of Meta information for a page, which helps us to define the characteristics of the page as well as short description of the page. It helps to search out the contents of the web pages as well as helps to describe the main theme of the web pages. You can also discuss who is the owner of the websites/webpage -->
+        
+        <meta name="author" content="Kawser Wazed Nafi">
+        <meta name="description" content="This is an example document to show the web development to Vanier College students">
+        <meta name="keywords" content="HTML, Vanier College, JavaScript, CSS">
+        
+        <!-- view port -->
+        <!-- ViewPort assures that the whole page will be viewed within the resolution section of the target device. That means, we are going to view the web pages in any kind of device without missing any information/ any design effects -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- To add a title/ name for your application, you have to put a title in the page.. YOu can use different title for different pages. Once you put the title, it will put the name on the browser tab-->
         <title>My First Web Page</title>
@@ -74,23 +84,19 @@ Footer
         <!-- External CSS-->
         <!-- For-External CSS, we need to link the css file we have created for our work. To do that, we need to use link tag and in the link tag, we need to pass the file name. we also have to define the type of the file we are going to add/link in the page with rel property-->
         
-        <link rel="stylesheet" href="css/myCSS.css">
+        <link rel="stylesheet" href="css/pageLayOut.css">
         
         <!-- FavICON: this icon will be view as an icon on the tab. If you open your browser, on the tab, you will see the icon visible. And this icon is acceptable for any kind of browser-->
         <link rel="icon" type="image/icon" href="images/vanierIcon.png">
         
     </head>
-    <nav> <!-- This is navigation section. We are going to put all the navigated pages/subpages in this section
-To put some additional space in between two texts we need to use &nbsp -->
-        <a href="index.html">Home</a> &nbsp <a href="secondPage.html">SecondPage</a>
-        
-    </nav>
+    
     <!-- Inline CSS -->
     <!-- In inline CSS, we put the CSS properties/ formatting styles with the HTML elements directly. We put all the style property-value pair in the same line with HTML elements-->
     <!--<body style="background-color: beige; font-family: sans-serif; font-size: 14px">-->
-    <body>
+    <body class="wrapper">
         
-        <div class="background_page">
+        
         <!-- Body Section. All the page contents are provided over here -->
         <br>
         <br>
@@ -108,26 +114,25 @@ to make the image a hyperlinked one, we have to put the image node inside the an
                 <area shape="rect" coords="474, 2700, 2124,2124" alt="Vanier College" href="https://www.vaniercollege.qc.ca/">
                 
             </map>
-            <figcaption style="text-align: center"> Vanier College</figcaption>
+            <figcaption style="text-align: center; color: beige"> Vanier College</figcaption>
         
+        <nav> <!-- This is navigation section. We are going to put all the navigated pages/subpages in this section
+To put some additional space in between two texts we need to use &nbsp -->
+        
+            <!-- It is always better to use list as navigation entry. We can use any kind of list, ol/ul and then we have to change the content based on that -->
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="secondPage.html">Second Page</a></li>
+            </ul>
+        
+        </nav>
    
+            <div class=".wrapper bodyBG">
         <!-- if we use width information with a page, it will proportionately adjust the height of the image-->
         
         <!-- DIV Element-->
         <!-- Every web page has different contents to present, as well as it has different stuffs to represent in different style. To do that, we need to divide the work space on a web page with div. Div helps us to seperate the contents of one web page in different sections/ parts -->
         <div class="teach_method">
-        This is our first web page. Good luck to us.
-        
-        <!-- To add/separate lines from one to another, we need to use line breaker, which is <br> tag. This tag, whenever you use, will add a new line to the content, will add a line breaker and will bring the following contents to the new line-->
-        
-        <br>
-        This is second line in our web page.
-        This is third line in our web page.
-        <br>
-        This is fourth line in our web page.
-        </div>
-        
-        <div>
         
         <h1 class="header1">Required Texts</h1><!-- Highest Level Heading.. Main Section
 
@@ -208,10 +213,8 @@ Inside the list, each element need to be surrounded by the <li> tag-->
             <dd>Attendance is done orally during the class. Zoom log does not count as participation. Attendance can be done at any time in the classroom or multiple times. Not being responsive to the instructor when asked is considered an absence from the session.</dd>
         </dl>
         </div>
-    </div>
-    </body>
     
-    <footer>
+        <footer>
     <!-- Footer Section.. You can put the lower part information in this section -->
         <sup>1</sup> Class recording are going to be uploaded in Youtube playlist. 
         <!--<div style="font-family: monospace; font-display: block; font-weight: 300;">-->
@@ -222,7 +225,8 @@ Inside the list, each element need to be surrounded by the <li> tag-->
         Phone: <a href="tel:444-555-8888"><i>444-555-8888</i></a>
         </div>
     </footer>
+        </div>
+    </body>
     
-
     
 </html>
