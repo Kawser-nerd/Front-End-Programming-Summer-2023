@@ -94,8 +94,10 @@ Footer
     <!-- Inline CSS -->
     <!-- In inline CSS, we put the CSS properties/ formatting styles with the HTML elements directly. We put all the style property-value pair in the same line with HTML elements-->
     <!--<body style="background-color: beige; font-family: sans-serif; font-size: 14px">-->
+   
     <body class="wrapper">
         
+       
         
         <!-- Body Section. All the page contents are provided over here -->
         <br>
@@ -128,12 +130,17 @@ To put some additional space in between two texts we need to use &nbsp -->
         </nav>
    
             <div class=".wrapper bodyBG">
+                 <nav style="position: sticky; color: red; background-color: aqua; top:20px;  font-size: 24px;">
+        
+        Home Back
+        
+    </nav>
         <!-- if we use width information with a page, it will proportionately adjust the height of the image-->
         
         <!-- DIV Element-->
         <!-- Every web page has different contents to present, as well as it has different stuffs to represent in different style. To do that, we need to divide the work space on a web page with div. Div helps us to seperate the contents of one web page in different sections/ parts -->
         <div class="teach_method">
-        
+         
         <h1 class="header1">Required Texts</h1><!-- Highest Level Heading.. Main Section
 
 Whenever you added a heading element, it will add line break to the contents and will bring the current cursor position to the new line section-->
@@ -168,9 +175,9 @@ materials. <!-- <b> represents bold content .. instead of <b> we can use <strong
         <hr> <!-- horizontal line.. it will put a straight line in the page-->
         
         <!--<div style="text-align: justify; background-color: aquamarine; display: block; ">-->
-        <div class="teach_method">
-        <h2 class="header1">Teaching Methodologies</h2>
-        
+        <div class="teaching_methods">
+        <div class="header1">Teaching Methodologies</div>
+        <br>
         It is recommended that material be addressed in the following order along with the following week division: <br>
         <!--<ol><!-- This is OrderedList. All the list items will be listed with numbers from 1 to infinite
             <li>Introduction to the Topics of Web</li
@@ -186,6 +193,15 @@ materials. <!-- <b> represents bold content .. instead of <b> we can use <strong
             <meter value="2" min="0" max="16">4</meter> 4 days of classes for ReactJS<br>
         
         <progress value="20" max="100">20</progress> 20% of course contents are covered.
+             <br>
+            <div class="inline_box">
+                
+                <img src="images/vanier_inline.png" alt="Vanier College Continuing Education logo" width="100px">
+                <p>
+                THis image shows the logo of vanier college continuing education 
+          </p>
+        </div>
+            
         <h4>Assessments</h4>
         For exams, it is recommended to have a combination of written and lab exam. In addition to that, the teacher will ensure the following competencies:
         <ul> <!-- UnOrdered List.. Its the beginning declaration about the upcoming list
@@ -196,6 +212,7 @@ Inside the list, each element need to be surrounded by the <li> tag-->
             <li>Brainstorming</li>
             <li>Modeling/Demonstration</li>
         </ul>
+            
         </div>
         
         <div>
@@ -226,6 +243,7 @@ Inside the list, each element need to be surrounded by the <li> tag-->
         </div>
     </footer>
         </div>
+            
     </body>
     
     

@@ -1,21 +1,39 @@
 .wrapper{
-     background-image: url(../images/contactImage.jpg);
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-image: url(../images/contactImage.jpg);
                 /* The background-size actually takes the information of the viewport and then resize the content based on that resolution ratio it got from viewport
                 
                 if you use cover, it will use the image with stretch property to view the content in the page
                 
                 If you use contain property, it will not stretch the image, rather will take the proper resolution/reshapre width and height of the image and will paste and join to appear as a continuous image in the page.
                 */
+    
     background-size: contain;
-    font-family: sans-serif;
-    font-size: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+}
+
+.inline_box{
+    background-color: bisque;
+    color: brown;
+    overflow: auto;
+    
+    
+    
+}
+.inline_box img{   
+    margin: 10px;
+    float: right;
     
 }
 
+
+
 .wrapper nav{
+
     float: left;
     text-decoration: none;
     min-width: 15%;
@@ -33,6 +51,7 @@ nav a{
     
 }
 .wrapper blockquote{
+                
                 padding: 10px;
                 font-family: Brush Script M7, cursive;
                 font-size: 17px;
@@ -55,3 +74,36 @@ nav a{
     background-color: beige;
     opacity: 0.8;
 }
+.header1{
+    font-size: 20pt;
+    font-weight: bold;
+    
+}
+.teaching_methods{ /* Box model*/
+    position: static; /* default-- will maintain the sequence*/
+    position: absolute; /* Absoulte position will put everything related to the main page/ the body element marging*/
+    position: relative; /*will always place the content based on the previous element/div class/position*/
+    
+    /*position: fixed;
+    top: 20px;
+    left: 10px;*/
+    
+    box-sizing: border-box;
+    border: 3px solid red;
+    text-align: justify;
+    margin: 10px;/*This will put same space around the page*/
+    /*
+    margin: 5px 10px; /* 5px for top margin and bottom margin, 10 px for left and right margin
+    margin:10px 20px 30px; /*10px is for top margin, 20px is for left and right, 30px is for bottom margin
+    margin: 10px 20px 30px 40px; /* 10px is for top margin, 20 px for right margin,  30px for bottom margin, 40px is for left margin*/
+    
+    padding: 10px; /* this will apply same space in between context and the border around the content
+    padding: 10px 20px; /*10 px for top and bottom, 20px for left and right
+    padding: 10px 20px 30px; /* 10 px to top, 20px to left and right, 30px to bottom only;
+    
+    padding: 10px 20px 30px 40px; /* 10px for top padding, 20px for right padding, 30px for bottom padding and 40px for left padding */
+    
+    
+    
+}
+
