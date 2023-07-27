@@ -1,0 +1,34 @@
+.wrapper{
+    background-image: none;
+    
+}
+
+.wrapper img{
+    display: none;
+}
+
+.wrapper nav{
+    display: none;
+}
+
+.bodyBG{
+    width: 100%;
+    background-color: white;
+}
+
+.bodyBG blockquote{
+                padding: 10px;
+                font-family: Brush Script M7, cursive;
+                font-size: 17px;
+                color: #FF6699;
+                border: 2px dashed #0000FF;
+                line-height: 1.25;
+                text-indent: 20px;
+                text-shadow:1px 1px black;
+                border-radius: 20px; /* 20px will be applied for each corner of the border*/
+                border-radius: 20px 10px; /*20px will work for left-top and right-bottom, 10px will work for left-bottom and right-top */
+                border-radius: 20px 10px 30px; /*20px will work for left-top, 10 px will work for left-bottom and right top, 30px will work for right bottom */
+                border-radius: 20px 10px 30px 40px; /*20px~ left-top, 10px~right top, 30px ~ right bottom and 40px left bottom*/
+                box-shadow:10px 10px 5px blue; 
+                
+            }

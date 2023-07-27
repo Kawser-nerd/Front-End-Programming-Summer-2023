@@ -1,3 +1,4 @@
+@media only screen and (min-width:680px){
 .wrapper{
     position: relative;
     font-family: sans-serif;
@@ -33,11 +34,16 @@
 
 
 .wrapper nav{
-
+  
     float: left;
     text-decoration: none;
     min-width: 15%;
     
+}
+    
+nav ul{
+    display: flex;
+    flex-direction: row;
 }
 
 nav li{
@@ -102,8 +108,161 @@ nav a{
     padding: 10px 20px 30px; /* 10 px to top, 20px to left and right, 30px to bottom only;
     
     padding: 10px 20px 30px 40px; /* 10px for top padding, 20px for right padding, 30px for bottom padding and 40px for left padding */
+       
+    }
+}
+
+@media print{
+    .wrapper{
+    background-image: none;
+    
+}
+
+.wrapper img{
+    display: none;
+}
+
+.wrapper nav{
+    display: none;
+}
+
+.bodyBG{
+    width: 100%;
+    background-color: white;
+}
+
+.bodyBG blockquote{
+                padding: 10px;
+                font-family: Brush Script M7, cursive;
+                font-size: 17px;
+                color: #FF6699;
+                border: 2px dashed #0000FF;
+                line-height: 1.25;
+                text-indent: 20px;
+                text-shadow:1px 1px black;
+                border-radius: 20px; /* 20px will be applied for each corner of the border*/
+                border-radius: 20px 10px; /*20px will work for left-top and right-bottom, 10px will work for left-bottom and right-top */
+                border-radius: 20px 10px 30px; /*20px will work for left-top, 10 px will work for left-bottom and right top, 30px will work for right bottom */
+                border-radius: 20px 10px 30px 40px; /*20px~ left-top, 10px~right top, 30px ~ right bottom and 40px left bottom*/
+                box-shadow:10px 10px 5px blue; 
+                
+    }
+}
+/* @media device: screen/print/a and min/max-width*/
+@media only all and (max-width: 680px){
+    .wrapper nav{
+        text-align: left;
+    text-decoration: none;
+    min-width: 100%;
+    
+    }
+    .bodyBG{
+    width: 100%;
+    /*background-color: beige;*/
+    opacity: 0.8;
+}
+    
+    .wrapper{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    /*background-image: url(../images/contactImage.jpg);*/
+    background-color: blueviolet;
+                /* The background-size actually takes the information of the viewport and then resize the content based on that resolution ratio it got from viewport
+                
+                if you use cover, it will use the image with stretch property to view the content in the page
+                
+                If you use contain property, it will not stretch the image, rather will take the proper resolution/reshapre width and height of the image and will paste and join to appear as a continuous image in the page.
+                */
+    
+    background-size: contain;
+}
+
+.inline_box{
+    background-color: bisque;
+    color: brown;
+    overflow: auto;
     
     
     
 }
+.inline_box img{   
+    margin: 10px;
+    float: right;
+    
+}
 
+
+
+
+
+nav li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav a{
+    color: aliceblue;
+    text-decoration: none;  
+    
+}
+.wrapper blockquote{
+                
+                padding: 10px;
+                font-family: Brush Script M7, cursive;
+                font-size: 17px;
+                color: #FF6699;
+                border: 2px dashed #0000FF;
+                line-height: 1.25;
+                text-indent: 20px;
+                text-shadow:1px 1px black;
+                border-radius: 20px; /* 20px will be applied for each corner of the border*/
+                border-radius: 20px 10px; /*20px will work for left-top and right-bottom, 10px will work for left-bottom and right-top */
+                border-radius: 20px 10px 30px; /*20px will work for left-top, 10 px will work for left-bottom and right top, 30px will work for right bottom */
+                border-radius: 20px 10px 30px 40px; /*20px~ left-top, 10px~right top, 30px ~ right bottom and 40px left bottom*/
+                box-shadow:10px 10px 5px blue; 
+                
+            }
+
+
+.header1{
+    font-size: 20pt;
+    font-weight: bold;
+    
+}
+.teaching_methods{ /* Box model*/
+    position: static; /* default-- will maintain the sequence*/
+    position: absolute; /* Absoulte position will put everything related to the main page/ the body element marging*/
+    position: relative; /*will always place the content based on the previous element/div class/position*/
+    
+    /*position: fixed;
+    top: 20px;
+    left: 10px;*/
+    
+    box-sizing: border-box;
+    border: 3px solid red;
+    text-align: justify;
+    margin: 10px;/*This will put same space around the page*/
+    /*
+    margin: 5px 10px; /* 5px for top margin and bottom margin, 10 px for left and right margin
+    margin:10px 20px 30px; /*10px is for top margin, 20px is for left and right, 30px is for bottom margin
+    margin: 10px 20px 30px 40px; /* 10px is for top margin, 20 px for right margin,  30px for bottom margin, 40px is for left margin*/
+    
+    padding: 10px; /* this will apply same space in between context and the border around the content
+    padding: 10px 20px; /*10 px for top and bottom, 20px for left and right
+    padding: 10px 20px 30px; /* 10 px to top, 20px to left and right, 30px to bottom only;
+    
+    padding: 10px 20px 30px 40px; /* 10px for top padding, 20px for right padding, 30px for bottom padding and 40px for left padding */
+       
+    }
+
+    
+}
+    
+    
+    
+    
+    

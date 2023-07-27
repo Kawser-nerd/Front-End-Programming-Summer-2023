@@ -84,14 +84,18 @@ Footer
         <!-- External CSS-->
         <!-- For-External CSS, we need to link the css file we have created for our work. To do that, we need to use link tag and in the link tag, we need to pass the file name. we also have to define the type of the file we are going to add/link in the page with rel property-->
         
-        <link rel="stylesheet" href="css/pageLayOut.css">
+        <!-- To seperate the viewport availability of the page, we need to use media query, which will detect the device layout and will help us to view the content based on the media they are using-->
+        
+        <link rel="stylesheet" href="css/pageLayOut.css"> <!-- Regular CSS-->
+       <!-- <link rel="stylesheet" href="css/printCSS.css" media="print"> <!-- Printing media CSS-->
+        
         
         <!-- FavICON: this icon will be view as an icon on the tab. If you open your browser, on the tab, you will see the icon visible. And this icon is acceptable for any kind of browser-->
         <link rel="icon" type="image/icon" href="images/vanierIcon.png">
         
     </head>
     
-    <!-- Inline CSS -->
+    <!-- Inline CSS-->
     <!-- In inline CSS, we put the CSS properties/ formatting styles with the HTML elements directly. We put all the style property-value pair in the same line with HTML elements-->
     <!--<body style="background-color: beige; font-family: sans-serif; font-size: 14px">-->
    
@@ -99,23 +103,31 @@ Footer
         
        
         
-        <!-- Body Section. All the page contents are provided over here -->
-        <br>
-        <br>
+        <!-- Body Section. All the page contents are provided over here-->
+        
         
         <!-- Adding Image
 To add an image in Html, we need to use <img> html tag. In that tag, we use src to provide the link of the image and width to define the view area of the image. we don't need to close image tag, like line break tag 
 
-to make the image a hyperlinked one, we have to put the image node inside the anchor not/hyperlinked node.
--->
+to make the image a hyperlinked one, we have to put the image node inside the anchor not/hyperlinked node.-->
         
+        <!--
         <img src="images/vaniercollege.jpg"  width="100%"  alt="Vanie College Not loaded image" usemap="#vanierMap">
             
             <map name="vanierMap">
                 <area shape="rect" coords="100, 460, 426,426" alt="Vanier College" href="https://www.vaniercollege.qc.ca/">
                 <area shape="rect" coords="474, 2700, 2124,2124" alt="Vanier College" href="https://www.vaniercollege.qc.ca/">
                 
-            </map>
+            </map>-->
+        
+        <!-- Picture Element- optimized picture load for different page width-->
+        
+        <picture>
+            <source media="(min-width: 1200px)" srcset ="images/vaniercollege_large.jpg">
+            <source media="(min-width: 900px)" srcset="images/">
+            <source media="(min-width: 420px)" srcset="images/vaniercollege_small.jpg">
+            <img src="images/vaniercollege.jpg" width="100%" alt="Vanier College">
+        </picture>
             <figcaption style="text-align: center; color: beige"> Vanier College</figcaption>
         
         <nav> <!-- This is navigation section. We are going to put all the navigated pages/subpages in this section
@@ -125,23 +137,33 @@ To put some additional space in between two texts we need to use &nbsp -->
             <ul>
                 <li><a href="index.html">Home Page</a></li>
                 <li><a href="secondPage.html">Second Page</a></li>
+                <li><a href="LabWorks.html" target="_blank"></a></li>
+                <br>
+                <br>
+                <!--Inner Fragment Navigation  # in href means inside that page-->
+                
+                <li><a href="#requiredTexts">Required Texts</a></li>
+                <li><a href="#teachingmethod">Teaching Methodologies</a></li>
+                <li><a href="#eval&ass">Assesment &amp; Evaluation</a></li>
+                
             </ul>
         
         </nav>
    
             <div class=".wrapper bodyBG">
-                 <nav style="position: sticky; color: red; background-color: aqua; top:20px;  font-size: 24px;">
+                <!--- 
+                <nav style="position: sticky; color: red; background-color: aqua; top:20px;  font-size: 24px;">
         
         Home Back
         
-    </nav>
+    </nav>-->
         <!-- if we use width information with a page, it will proportionately adjust the height of the image-->
         
         <!-- DIV Element-->
         <!-- Every web page has different contents to present, as well as it has different stuffs to represent in different style. To do that, we need to divide the work space on a web page with div. Div helps us to seperate the contents of one web page in different sections/ parts -->
-        <div class="teach_method">
+        <div class="teach_method" >
          
-        <h1 class="header1">Required Texts</h1><!-- Highest Level Heading.. Main Section
+        <h1 class="header1" id="requiredTexts">Required Texts</h1><!-- Highest Level Heading.. Main Section
 
 Whenever you added a heading element, it will add line break to the contents and will bring the current cursor position to the new line section-->
         <h4>TextBook</h4> <!-- This is subsection part -->
@@ -176,7 +198,7 @@ materials. <!-- <b> represents bold content .. instead of <b> we can use <strong
         
         <!--<div style="text-align: justify; background-color: aquamarine; display: block; ">-->
         <div class="teaching_methods">
-        <div class="header1">Teaching Methodologies</div>
+        <div class="header1" id="teachingmethod">Teaching Methodologies</div>
         <br>
         It is recommended that material be addressed in the following order along with the following week division: <br>
         <!--<ol><!-- This is OrderedList. All the list items will be listed with numbers from 1 to infinite
@@ -216,7 +238,7 @@ Inside the list, each element need to be surrounded by the <li> tag-->
         </div>
         
         <div>
-        <h2>Assesment &amp; Evaluation</h2>
+        <h2 id="eval&ass">Assesment &amp; Evaluation</h2>
         <dl><!-- This is description list. WE are going to add a term and follow-by definition structure in the HTML page. For that, we need to use Description List-->
             <dt> <!-- represents term/phrase tag. The short section will be added here-->
                 Late Arrival
