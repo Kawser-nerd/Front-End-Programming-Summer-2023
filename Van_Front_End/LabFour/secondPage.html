@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Kawser Wazed Nafi">
+        <meta name="keywords" content="FlexBox, GridBox">
+        <meta name="description" content="This is an example page on how to use FlexBox and GridBox Contents in the html pages">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Box and Grid Box Page</title>
+        
+        <!-- Link CSS file-->
+        <link rel="stylesheet" type="text/css" href="css/secondPageCSS.css">
+        
+    </head>
+    <body class="container">
+        <!-- Banner Section-->
+        <div class="banner">
+            <img src="images/vaniercollege.jpg" width="100%">
+            <figcaption>Vanier College</figcaption>
+        </div>
+        <!-- Navigation Section-->
+        <div class="navigation">
+            <nav> <!-- This is navigation section. We are going to put all the navigated pages/subpages in this section
+To put some additional space in between two texts we need to use &nbsp -->
+        
+            <!-- It is always better to use list as navigation entry. We can use any kind of list, ol/ul and then we have to change the content based on that -->
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="secondPage.html">Second Page</a></li>
+                <li><a href="LabWorks.html" target="_blank"> Lab Works</a></li>
+                
+                <!--Inner Fragment Navigation  # in href means inside that page-->
+                
+                <li><a href="#requiredTexts">Required Texts</a></li>
+                <li><a href="#teachingmethod">Teaching Methodologies</a></li>
+                <li><a href="#eval&ass">Assesment &amp; Evaluation</a></li>
+                
+            </ul>
+        
+        </nav>
+        </div>
+        
+        <!-- Description Section-->
+        <section class="description">
+            <!-- Section always create a new part in the page instead of a continution of the controls present in the page. It create a new property or place inside the page. It doesn't depend on any other related controls
+
+    
+        div is a kind of section, but it always maintain relation with other controls in the same page. That means, they continuously put their contents as a relative position/relation to other controls in the page.
+        
+        div is dependent on the continuation of other pages. You can put two div side by side, but can not put two section side my side.
+        -->
+        <div class="requiredText">
+            <div class="header1" id="requiredTexts">Required Texts</div><!-- Highest Level Heading.. Main Section
+
+Whenever you added a heading element, it will add line break to the contents and will bring the current cursor position to the new line section-->
+        <h4>TextBook</h4> <!-- This is subsection part -->
+        <!-- The following section is going to have two paragraphs. To view them properly, we need to use a seperator. We can do this in two ways: we can either use line break tag/element or we can use paragraph tag, <p>. inbetween the opening and closing paragraph tag, we can put all of the contents of that paragraph-->
+        
+        <p>
+            <b>No specific book</b> is recommended. The student can use any related textbook for learning the
+materials. <!-- <b> represents bold content .. instead of <b> we can use <strong> tag as well-->
+        </p>
+        
+        <p>
+        There are some valuable textbooks available for learning HTML. But a problem to those books is HTML changes very frequently. Once a new change is brought, the old book contents get obsolete. So, we always need to be updated by searching for new contents in Internet.
+        </p>
+
+        <h4>Online Resources</h4>
+            All the <span><em><b>class recordings<sup>1</sup>, required documentation </b> and tutorials</em></span> will be provided to students throughout the semester. The instructor is open to use and refer any <i>online tutorials</i> whenever required.
+        
+        <!-- <em> or <i> tag makes the content emphasized or italic. It is used to see the contents with additional focus-->
+        
+        <!-- BlockQuote Element -->
+        <!--<blockquote style="font-family: cursive; font-size: 17px; letter-spacing: 2px; border: 2px solid blue; color: brown">-->
+        <blockquote>
+            Online resources are not always validated. You have to check it first. And at the time of using it, you have to see the appearance of the contents by yourself.
+        </blockquote>
+        
+        <h4>In-Class Notes and Codes<sup>&copy;</sup></h4>
+        will be provided throughout the semester. The class notes are registered under the Vanier College<sub>&reg;</sub> properties.<br>
+        The class codes, examples and class recordings are going to be provided in <a href="https://github.com/Kawser-nerd/Front-End-Programming-Summer-2023">GitHub</a> and <a href="https://youtube.com/playlist?list=PLwKpGi8r7u0TT9Wrv0XkXbkIxHm-O-iNz">Youtube</a> respectively.
+        </div>
+        <div class="teachingMethod">
+            <div class="header1" id="teachingmethod">Teaching Methodologies</div>
+        <br>
+        It is recommended that material be addressed in the following order along with the following week division: <br>
+        <!--<ol><!-- This is OrderedList. All the list items will be listed with numbers from 1 to infinite
+            <li>Introduction to the Topics of Web</li
+            <li>HTML/CSS</li>
+            <li>JavaScript/JQuery</li>
+            <li>AJAX</li>
+            <li>ReactJS</li>
+        </ol>-->
+        <meter value="16" min="0" max="16">16</meter> 16 days of classes in web develoment<br>
+        <meter value="1" min="0" max="16">1</meter> 1 days of classes for introduction to web programming<br>
+            <meter value="7" min="0" max="16">7</meter> 7 days of classes for HTML/CSS<br>
+            <meter value="5" min="0" max="16">5</meter> 5 days of classes for JavaScript and its features<br>
+            <meter value="2" min="0" max="16">4</meter> 4 days of classes for ReactJS<br>
+        
+        <progress value="20" max="100">20</progress> 20% of course contents are covered.
+             <br>
+            <div class="inline_box">
+                
+                <img src="images/vanier_inline.png" alt="Vanier College Continuing Education logo" width="100px">
+                <p>
+                THis image shows the logo of vanier college continuing education 
+          </p>
+            </div>
+        
+        </div>
+        <div class="assessment">
+            
+        
+        <div class="header1" id="eval&ass">Assesment &amp; Evaluation</div>
+        <dl><!-- This is description list. WE are going to add a term and follow-by definition structure in the HTML page. For that, we need to use Description List-->
+            <dt> <!-- represents term/phrase tag. The short section will be added here-->
+                Late Arrival
+            </dt>
+            <dd> <!-- This is detailed description of the term we have added before. In this place, we are going to put the longer description which will explain the term -->
+                If a student arrives late (after the scheduled class time), the instructor has the right to refuse entry until following the break.
+            </dd>
+            <dt>Missing Evaluation </dt>
+            <dd>If a student misses a summative evaluation, he/she must justify their absence with a medical note within 3 days of the missed evaluation. Failure to do so will result in zero.</dd>
+            <dt>Class Attendance</dt>
+            <dd>Attendance is done orally during the class. Zoom log does not count as participation. Attendance can be done at any time in the classroom or multiple times. Not being responsive to the instructor when asked is considered an absence from the session.</dd>
+        </dl>
+        <h4>Assessments</h4>
+        For exams, it is recommended to have a combination of written and lab exam. In addition to that, the teacher will ensure the following competencies:
+        <ul> <!-- UnOrdered List.. Its the beginning declaration about the upcoming list
+Inside the list, each element need to be surrounded by the <li> tag-->
+            <li>Problem Solving</li>
+            <li>Lecture</li>
+            <li>Project-Based Learning</li>
+            <li>Brainstorming</li>
+            <li>Modeling/Demonstration</li>
+        </ul>
+</div>
+        </section>
+        <!-- Footer Section-->
+        <div class="footer">
+            <footer>
+    <!-- Footer Section.. You can put the lower part information in this section -->
+        <sup>1</sup> Class recording are going to be uploaded in Youtube playlist. 
+        <!--<div style="font-family: monospace; font-display: block; font-weight: 300;">-->
+        <div id="contact_teacher">
+        <h3>Contact to the Teacher</h3>
+        Kawser Wazed Nafi <br>
+        e-Mail: <a href="mailto:nafik@vaniercollege.qc.ca">nafik@vaniercollege.qc.ca</a> <br>
+        Phone: <a href="tel:444-555-8888"><i>444-555-8888</i></a>
+        </div>
+    </footer>
+        </div>
+    </body>
+</html>

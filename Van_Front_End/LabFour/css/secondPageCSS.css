@@ -1,0 +1,799 @@
+/*FlexBox */
+/*@media only all and (min-width:900px){
+.banner{
+    
+}
+
+.banner figcaption{
+    text-align: center;
+    background-color: azure;
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+.inline_box{
+    background-color: azure;
+    overflow: auto;
+}
+
+.inline_box img{
+    float: right;
+}
+
+.navigation{
+    background: linear-gradient(lightblue, lightyellow);
+    
+}
+
+.navigation ul{
+      
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+.navigation li{
+    list-style-type: none;
+    border-bottom: 1px dotted blue;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: aqua;
+  
+}
+
+.navigation a:visited{
+    color: red;
+}
+    
+.header1{
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description .requiredText{
+    width: 250px;
+    margin: 2%;
+}
+
+.description .teachingMethod{
+    width: 250px;
+    margin: 2%;
+}
+
+.description .assessment{
+    width: 250px;
+    margin: 2%;
+}
+
+.footer{
+    background-image: url(../images/contactImage.jpg);
+    color: aliceblue;
+}
+
+}*/
+
+/*
+@media only all and (max-width:900px) and (min-width:460px){
+.banner{
+    
+}
+
+.banner figcaption{
+    text-align: center;
+    background-color: azure;
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+.inline_box{
+    background-color: azure;
+    overflow: auto;
+}
+
+.inline_box img{
+    float: right;
+}
+
+.navigation{
+    background: linear-gradient(lightblue, lightyellow);
+    
+}
+
+.navigation ul{
+      
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+.navigation li{
+    list-style-type: none;
+    border-bottom: 1px dotted blue;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: aqua;
+  
+}
+    
+.navigation a:visited{
+    color: red;
+}
+
+.header1{
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description .requiredText{
+    width: 45%;
+    margin: 2%;
+}
+
+.description .teachingMethod{
+    width: 45%;
+    margin: 2%;
+}
+
+.description .assessment{
+    width: 100%;
+    margin: 2%;
+}
+
+.footer{
+    background-image: url(../images/contactImage.jpg);
+    color: aliceblue;
+}
+
+}
+*/
+/*
+@media only all and (max-width:460px){
+.banner{
+    
+}
+
+.banner figcaption{
+    text-align: center;
+    background-color: azure;
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+.inline_box{
+    background-color: azure;
+    overflow: auto;
+}
+
+.inline_box img{
+    float: right;
+}
+
+.navigation{
+    background: linear-gradient(lightblue, lightyellow);
+    
+}
+
+.navigation ul{
+      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+.navigation li{
+    list-style-type: none;
+    border-bottom: 1px dotted blue;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: aqua;
+  
+}
+    
+.navigation a:visited{
+    color: red;
+}
+
+.header1{
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description .requiredText{
+    width: 100%;
+    margin: 2%;
+}
+
+.description .teachingMethod{
+    width: 100%;
+    margin: 2%;
+}
+
+.description .assessment{
+    width: 100%;
+    margin: 2%;
+}
+
+.footer{
+    background-image: url(../images/contactImage.jpg);
+    color: aliceblue;
+}
+
+}
+*/
+/*GridBox*/
+
+/*
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    display: grid;
+}
+
+.banner{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.banner figcaption{
+    text-align: center;
+    background-color: azure;
+}
+
+.inline_box{
+    background-color: azure;
+    overflow: auto;
+}
+
+.inline_box img{
+    float: right;
+}
+
+.navigation{
+    background: linear-gradient(lightblue, lightyellow);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    
+}
+
+.navigation ul{
+      
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+.navigation li{
+    list-style-type: none;
+    border-bottom: 1px dotted blue;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: aqua;
+  
+}
+
+.navigation a:visited{
+    color: red;
+}
+    
+.header1{
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+.description{
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.requiredText{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 2%;
+}
+
+.teachingMethod{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 2%;
+}
+
+.assessment{
+     grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 2%;
+    margin: 2%;
+}
+
+.footer{
+     grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 2%;
+    background-image: url(../images/contactImage.jpg);
+    color: aliceblue;
+}
+*/
+
+
+/* Nested Layout - Grid and Flex Together*/
+/*
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    display: grid;
+}
+
+.banner{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.banner figcaption{
+    text-align: center;
+    background-color: azure;
+}
+
+.inline_box{
+    background-color: azure;
+    overflow: auto;
+}
+
+.inline_box img{
+    float: right;
+}
+
+.navigation{
+    background: linear-gradient(lightblue, lightyellow);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    
+}
+
+.navigation ul{
+      
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+.navigation li{
+    list-style-type: none;
+    border-bottom: 1px dotted blue;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: aqua;
+  
+}
+
+.navigation a:visited{
+    color: red;
+}
+    
+.header1{
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+.description{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    
+}
+
+.description .requiredText{
+    width: 30%;
+    margin: 1%;
+}
+
+.description .teachingMethod{
+    width: 30%;
+    margin: 1%;
+}
+
+.description .assessment{
+    width: 30%;
+    margin: 1%;
+}
+
+.footer{
+     grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 2%;
+    background-image: url(../images/contactImage.jpg);
+    color: aliceblue;
+}
+
+*/
+
+
+
+
+/*Nested Grid*/
+
+@media only all and (min-width:500px){
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    display: grid;
+}
+
+.banner{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.banner figcaption{
+    text-align: center;
+    background-color: azure;
+}
+
+.inline_box{
+    background-color: azure;
+    overflow: auto;
+}
+
+.inline_box img{
+    float: right;
+}
+
+.navigation{
+    background: linear-gradient(lightblue, lightyellow);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    
+}
+
+.navigation ul{
+      
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+.navigation li{
+    list-style-type: none;
+    border-bottom: 1px dotted blue;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: aqua;
+  
+}
+
+.navigation a:visited{
+    color: red;
+}
+    
+.header1{
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+.description{ /* Section Class */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* Upper grid descriptions are for the outer layout*/
+    
+    /* The grid layout I am going to create now is the inner layout and scope of this layout sustains within this section*/
+    
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+.description .requiredText{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    margin: 3%;
+}
+
+.description .teachingMethod{
+grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    
+    margin: 3%;
+}
+
+.description .assessment{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+
+    margin: 3%;
+}
+
+.footer{
+     grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 2%;
+    background-image: url(../images/contactImage.jpg);
+    color: aliceblue;
+}
+
+}
+
+
+
+@media only all and (max-width:500px){
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    display: grid;
+}
+
+.banner{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+}
+
+.banner figcaption{
+    text-align: center;
+    background-color: azure;
+}
+
+.inline_box{
+    background-color: azure;
+    overflow: auto;
+}
+
+.inline_box img{
+    float: right;
+}
+
+.navigation{
+    background: linear-gradient(lightblue, lightyellow);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    
+}
+
+.navigation ul{
+      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+    
+}
+
+.navigation li{
+    list-style-type: none;
+    border-bottom: 1px dotted blue;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation li:hover{
+    background-color: aqua;
+  
+}
+
+.navigation a:visited{
+    color: red;
+}
+    
+.header1{
+    font-size: 24pt;
+    font-weight: 500;
+}
+
+.description{ /* Section Class */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* Upper grid descriptions are for the outer layout*/
+    
+    /* The grid layout I am going to create now is the inner layout and scope of this layout sustains within this section*/
+    
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+        
+}
+
+.description .requiredText{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    margin: 1%;
+}
+
+.description .teachingMethod{
+grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    
+    margin: 1%;
+}
+
+.description .assessment{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+
+    margin: 1%;
+}
+
+.footer{
+     grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 2%;
+    background-image: url(../images/contactImage.jpg);
+    color: aliceblue;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

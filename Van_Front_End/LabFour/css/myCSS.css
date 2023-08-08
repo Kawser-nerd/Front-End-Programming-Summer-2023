@@ -1,0 +1,93 @@
+/*
+            
+            this tag needs to be present inside head element
+            
+            This is the place to put the CSS properties one after another. We need to use different element tags and CSS class/id properties over here. If we are going to add CSS properties with HTML element, we need to call the element first and then we need to send the properties over there. We need to use Curly braces to set the scope of the css properties
+            
+            N.B: The name of the HTML elements and style section tag name needs to be same*/
+            
+            body{ /* HTML Element tag name */
+                /*background-color: beige;*/
+                background-image: url(../images/contactImage.jpg);
+                /* The background-size actually takes the information of the viewport and then resize the content based on that resolution ratio it got from viewport
+                
+                if you use cover, it will use the image with stretch property to view the content in the page
+                
+                If you use contain property, it will not stretch the image, rather will take the proper resolution/reshapre width and height of the image and will paste and join to appear as a continuous image in the page.
+                */
+                background-size: contain;
+                font-family: sans-serif;
+                font-size: 14px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                
+            }
+            
+            blockquote{
+                padding: 10px;
+                font-family: Brush Script M7, cursive;
+                font-size: 17px;
+                color: #FF6699;
+                border: 2px dashed #0000FF;
+                line-height: 1.25;
+                text-indent: 20px;
+                text-shadow:1px 1px black;
+                border-radius: 20px; /* 20px will be applied for each corner of the border*/
+                border-radius: 20px 10px; /*20px will work for left-top and right-bottom, 10px will work for left-bottom and right-top */
+                border-radius: 20px 10px 30px; /*20px will work for left-top, 10 px will work for left-bottom and right top, 30px will work for right bottom */
+                border-radius: 20px 10px 30px 40px; /*20px~ left-top, 10px~right top, 30px ~ right bottom and 40px left bottom*/
+                box-shadow:10px 10px 5px blue; 
+                
+            }
+
+.background_page{
+    /*background-image: url(../images/contactImage.jpg);*/
+    background-color: beige;
+    opacity:0.8;
+    
+}
+footer{
+    background-color: beige;
+    opacity: 0.8;
+}
+
+.header1{
+    background-color: aqua;
+}
+nav a{ /*decendent CSS properties. This only works when you point a tag which is inside another big element/ to point one element inside a nested element */
+    color: aliceblue;
+    text-decoration: none;
+}
+            /* 
+            If same name element is used multiple times in a page, then if you call the element once, the CSS properties will be adapted for all of the places. That means, one html element based css will impact all othe same type of elements
+            
+            to apply individual CSS properties for each of the same-named-element seperately, we need to create CSS class. And then we need to pass that class along with CSS properties for that class to the targeted div to apply them properly. The same CSS class can be applied in different same named HTML elements
+            
+            to create a css class, we need to follow the following syntax
+            
+            .class_name{}
+            
+            this means, we first need to put a dot and then the class name followed by curly braces to define the scope.
+            
+            */
+            
+            .teach_method{ /*Class based CSS creation - we need to use . infront of the class/id name*/
+                background-color: aquamarine;
+                color: black;
+                font-family:Arial, sans-serif, Courier new;
+                font-style:oblique;
+                line-height: 2; /* This is the line spacing, similar to word document*/
+                text-align: justify;
+                
+            }
+           
+            #contact_teacher{ /* ID-based CSS -- we need to use # infront of the class/id name*/
+                color: aliceblue;
+                background-image: url(../images/contactImage.jpg);
+                font-family: monospace;
+                font-size: 10px;
+            }
+    #contact_teacher a{ /* decendent CSS properties*/
+        color: beige;
+    }

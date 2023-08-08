@@ -1,6 +1,13 @@
 @media only screen and (min-width:560px){
 .wrapper{
-    position: relative;
+    
+    /* Grid Layout*/
+    display: grid;
+    /* Create the column framework*/
+    grid-template-columns: 30% auto 30%; /*we made 3 column pages*/
+    grid-template-rows: auto;
+    
+    /*position: relative;*/
     font-family: sans-serif;
     font-size: 14px;
     margin-left: auto;
@@ -16,6 +23,13 @@
     
     background-size: contain;
 }
+    
+    picture{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
 .inline_box{
     background-color: bisque;
@@ -35,7 +49,10 @@
 
 .wrapper nav{
   
-    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     text-decoration: none;
     text-align: center;
     
@@ -43,14 +60,16 @@
 }
     
 nav ul{
+    
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: stretch;
+    
 }
 
 nav li{
+    border: 2px solid red;
     text-decoration: none;
     list-style-type: none;
 }
@@ -79,25 +98,81 @@ nav a{
             }
 
 .bodyBG{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+display: grid;
+    grid-template-columns: 30% auto 30%;
+    border-spacing: 2px;
+    /*
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    */
+    
+    /*flex-wrap: This allows the flex boxes to be gone to the new line of the same pages*/
+    
     
     background-color: beige;
     opacity: 0.8;
 }
+    .flexbox{
+        width: 300px;  
+        
+    }
+
+    /* This section changes the order of the boxes*/
+    .bodyBG .flexbox:nth-child(1){
+        order: 1;
+    }
+    
+    .bodyBG .flexbox:nth-child(2){
+        order: 3;
+    }
+    .bodyBG .flexbox:nth-child(3){
+        order: 2;
+    }
+    
 .header1{
     font-size: 20pt;
     font-weight: bold;
     
 }
-.teaching_methods{ /* Box model*/
-    position: static; /* default-- will maintain the sequence*/
-    position: absolute; /* Absoulte position will put everything related to the main page/ the body element marging*/
-    position: relative; /*will always place the content based on the previous element/div class/position*/
+.teach_method{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     
+  margin: 10px;      
+    }
+.assessment{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 10px;       
+    }
+.teaching_methods{ /* Box model*/
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /*
+    position: static; /* default-- will maintain the sequence
+    position: absolute; /* Absoulte position will put everything related to the main page/ the body element marging
+    position: relative; /*will always place the content based on the previous element/div class/position*/
+    */
     /*position: fixed;
     top: 20px;
     left: 10px;*/
     
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     border: 3px solid red;
     text-align: justify;
     margin: 10px;/*This will put same space around the page*/
@@ -214,6 +289,9 @@ nav ul{
 
 
 nav li{
+    width: 100%;
+    border: 2px solid red;
+    margin: 2px;
     text-decoration: none;
     list-style-type: none;
 }
