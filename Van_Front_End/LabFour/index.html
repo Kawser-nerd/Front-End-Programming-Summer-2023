@@ -246,7 +246,7 @@ Inside the list, each element need to be surrounded by the <li> tag-->
             
         </div>
         
-        <div class=".assessment">
+        <div class="assessment">
         <h2 id="eval&ass">Assesment &amp; Evaluation</h2>
         <dl><!-- This is description list. WE are going to add a term and follow-by definition structure in the HTML page. For that, we need to use Description List-->
             <dt> <!-- represents term/phrase tag. The short section will be added here-->
@@ -261,7 +261,107 @@ Inside the list, each element need to be surrounded by the <li> tag-->
             <dd>Attendance is done orally during the class. Zoom log does not count as participation. Attendance can be done at any time in the classroom or multiple times. Not being responsive to the instructor when asked is considered an absence from the session.</dd>
         </dl>
         </div>
-    <footer>
+        <div class="tableProperty">
+            <table border="2">
+                <caption> Inhabitants in Building 17, 5795 Cote Des Neiges </caption>
+                <tr> <!-- Row Element in a table -->
+                    <th id="FamilyNo"> Family No</th>
+                    <th id="Name"> Name</th>
+                    <th id="DoB"> Date of Birth</th>
+                    <th id="DoD"> Date of Dead</th>
+                </tr>
+                <tr>
+                    <td headers="FamilyNo" rowspan="4">Family One</td>
+                    <td headers="Name">Bob</td>
+                    <td headers="DoB">17-05-1959</td>
+                    <td headers="DoD">18-09-2020</td>   			
+                </tr>
+                <tr >
+                    <td header="Name" class="td3">Maria</td>
+                    <td headers="DoB" colspan="2">14-07-1964 -	</td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td headers="Name">Charles</td>
+                    <td headers="DoD" colspan="2">14-02-1982 -</td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td headers="Name">Charlie</td>
+                    <td headers="DoB">14-11-1984</td>
+                    <td headers="DoD">27-08-2022</td>
+                </tr>
+                <tr>
+                    <td headers="FamilyNo" rowspan="3">Family Two</td>
+                    <td headers="Name">Robert</td>
+                    <td headers="DoB" colspan="2">25-12-1976 -</td>
+                    
+                </tr>
+                <tr>
+                    <td headers="Name">Christine</td>
+                    <td headers="DoB">24-10-1978</td>
+                    <td headers="DoD">21-02-2023</td>
+                </tr>
+                <tr>
+                    
+                    <td headers="Name">Fernado</td>
+                    <td headers="DoD" colspan="2">24-06-2001 -</td>
+                    
+                </tr>
+            </table>
+        </div>
+                <div class="Multimedia">
+                    <p>Audio Controls</p>
+                    <audio controls controlsList="nodownload">
+                        <source src="multimedia/Unstoppable.mp3" type="audio/mp3">
+                        <a href="multimedia/Unstoppable.mp3"> Audio File Download</a>
+                    </audio>
+                    
+                    <p>Video Controls</p>
+                    <video width="300px" height="200px" controls poster="images/earth.png">
+                        <source src="multimedia/earthVideo.mp4" type="video/mp4">
+                        <source src="multimedia/earthVideo.mov" type="video/mov">
+                        <a href="multimedia/earthVideo.mov">Movie download</a>
+                    </video>
+                </div>
+                <h2>Contact Us</h2>
+                <div class="contactUs">
+                    
+                    <form>
+                        <table>
+                        <tr>
+                            <td><label>Name </label> &nbsp; </td>
+                            <td><input type="text"> </td>
+                        </tr>
+                            <tr>
+                                <td><label>Email Address</label> </td>
+                          <td><input type="text"> </td>
+                            </tr>
+                            <tr>
+                                <td><label>Reason to Contact </label></td>
+                         <td>
+                        <select>
+                            <option>Complain</option>
+                            <option>Suggesstion</option>
+                            <option>Appraisal</option>
+                            <option>Sharing Thoughts</option>
+                        </select>
+                             </td>
+                        </tr>
+                            <tr>
+                                <td>
+                        <label>Your Comments</label></td>
+                                <td><textarea cols="30" rows="8"></textarea></td>
+                        </tr>
+                            <td></td>
+                            <td><input type="submit" value="Send Information" ></td>
+                        </table>
+                    </form>
+                    
+                </div>
+    <footer class="footerCls">
     <!-- Footer Section.. You can put the lower part information in this section -->
         <sup>1</sup> Class recording are going to be uploaded in Youtube playlist. 
         <!--<div style="font-family: monospace; font-display: block; font-weight: 300;">-->
