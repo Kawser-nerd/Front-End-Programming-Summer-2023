@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <body>
+<form>
+    <fieldset>
+              <legend>Contact Form</legend>          
+        <table>
+                        <tr>
+                            <td><label for="Name">Name </label> &nbsp; </td>
+                            <td><input type="text" name="Name" value="Insert your name"> </td>
+                        </tr>
+                            <tr>
+                                <td><label for="Email">Email Address</label> </td>
+                          <td><input type="email" name="Email" value="Insert your email"> </td>
+                            </tr>
+                        <tr>
+                                <td><label for="Password">Password</label> </td>
+                          <td><input type="password" name="Password"> </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><label for="CheckBox"> Background </label></td>
+                                <td> <input type="checkbox" id="CheckBox" Name="CheckBox"> Age 18~65 &nbsp; <input type="checkbox" id="CheckBox" name="CheckBox">  High School or Upper 
+                                <br>
+                                    <input type="checkbox" id="CheckBox" name="CheckBox" value="yes"> Citizen/PR
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td><label for="RadioButton"> City From </label></td>
+                                <td> <input type="radio" id="RadioButton" Name="RadioButton"> Ottawa &nbsp; <input type="radio" id="RadioButton" name="RadioButton" value="Toronto">  Toronto 
+                                <br>
+                                    <input type="radio" id="RadioButton" name="RadioButton"> Montreal
+                                    
+                                    <input type="radio" id="RadioButton" name="RadioButton"> Halifax
+                                </td>
+                            </tr>
+                            
+            <tr>
+                                <td><label for="DataList"> City From </label></td>
+                                <td> <input type="text" id="DataList" Name="Datalist" list="Cities">
+                                    <datalist id="Cities">
+                                        <option value="Montreal" label="Montreal"></option>
+                                        <option value="Ottawa" label="Ottawa"></option>
+                                        <option value="Toronto" label="Toronto"></option>
+                                        <option value="Mont-Tremble" label="Mont-Tremble"></option>
+                                        <option value="Oshawa" label="Oshawa"></option>
+                                        
+                                    </datalist>
+                                </td>
+                            </tr>
+                            
+            
+                            
+                            <tr>
+                                <td><label for="ReasonContact">Reason to Contact </label></td>
+                                
+                         <td>
+                             
+                        <select name="ReasonContact" size="2">
+                            <option>Complain</option>
+                            <option>Suggesstion</option>
+                            <option>Appraisal</option>
+                            <option>Sharing Thoughts</option>
+                            <option>Option5</option>
+                            <option>Sharing Option6</option>
+                        </select>
+                             </td>
+                        </tr>
+                            <tr>
+                                <td>
+                        <label for="Comments">Your Comments</label></td>
+                                <td><textarea name="Comments" cols="30" rows="8"></textarea></td>
+                        </tr>
+                            <td></td>
+                            <td><input type="image" src="images/vanierIcon.png" width="20px"  value="Send Information" >&nbsp;
+                            <button type="reset">
+                                <img src="images/earth.png" width="20px"> 
+                                </button>
+                                
+                            </td>
+                        </table>
+        </fieldset>
+    
+                </form>
+        </body>
+    </html>

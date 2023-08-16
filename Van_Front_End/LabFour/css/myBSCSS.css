@@ -1,0 +1,23 @@
+body{ /* HTML Element tag name */
+                /*background-color: beige;*/
+                background-image: url(../images/contactImage.jpg);
+                /* The background-size actually takes the information of the viewport and then resize the content based on that resolution ratio it got from viewport
+                
+                if you use cover, it will use the image with stretch property to view the content in the page
+                
+                If you use contain property, it will not stretch the image, rather will take the proper resolution/reshapre width and height of the image and will paste and join to appear as a continuous image in the page.
+                */
+                background-size: contain;
+                font-family: sans-serif;
+                font-size: 14px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                
+            }
+.background_page{
+    /*background-image: url(../images/contactImage.jpg);*/
+    background-color: beige;
+    opacity:0.8;
+    
+}

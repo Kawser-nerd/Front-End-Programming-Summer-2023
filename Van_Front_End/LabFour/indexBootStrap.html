@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- Online BootStrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- Local BootStrap 5-->
+        
+        <!-- BootStrap CSS-->
+        <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        
+        <!-- BootStrap JSS -->
+        <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- My CSS -->
+        <link rel="stylesheet" href="css/myBSCSS.css">
+        
+    </head>
+    <body>
+        <section class="container" >
+            
+            <!-- Header Image Block -->
+            
+            <section class="col">
+                <img src="images/vaniercollege.jpg" width="100%" height="225px">
+            </section>
+            
+            
+            
+            <!-- Navigation Block -->
+            
+                <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center"> <!-- This is navigation section. We are going to put all the navigated pages/subpages in this section
+To put some additional space in between two texts we need to use &nbsp -->
+               <div class="container-fluid">
+                <!-- hamburger menu -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+            <!-- It is always better to use list as navigation entry. We can use any kind of list, ol/ul and then we have to change the content based on that -->
+                    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="secondPage.html">Second Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="LabWorks.html" target="_blank"> LabWorks </a></li>
+               
+                <!--Inner Fragment Navigation  # in href means inside that page-->
+                
+                <li class="nav-item"><a class="nav-link" href="#requiredTexts">Required Texts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#teachingmethod">Teaching Methodologies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#eval&ass">Assesment &amp; Evaluation</a></li>
+                
+            </ul>
+            </div>        
+        </div>
+        </nav>
+            
+            
+            <!-- Body Block -->
+            <section class="row background_page">
+            <!-- First Container-->    
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h1 class="display-4" id="requiredTexts">Required Texts</h1><!-- Highest Level Heading.. Main Section
+
+Whenever you added a heading element, it will add line break to the contents and will bring the current cursor position to the new line section-->
+        <h4>TextBook</h4> <!-- This is subsection part -->
+        <!-- The following section is going to have two paragraphs. To view them properly, we need to use a seperator. We can do this in two ways: we can either use line break tag/element or we can use paragraph tag, <p>. inbetween the opening and closing paragraph tag, we can put all of the contents of that paragraph-->
+        
+        <p>
+            <b>No specific book</b> is recommended. The student can use any related textbook for learning the
+materials. <!-- <b> represents bold content .. instead of <b> we can use <strong> tag as well-->
+        </p>
+        
+        <p>
+        There are some valuable textbooks available for learning HTML. But a problem to those books is HTML changes very frequently. Once a new change is brought, the old book contents get obsolete. So, we always need to be updated by searching for new contents in Internet.
+        </p>
+
+        <h4>Online Resources</h4>
+            All the <span><em><b>class recordings<sup>1</sup>, required documentation </b> and tutorials</em></span> will be provided to students throughout the semester. The instructor is open to use and refer any <i>online tutorials</i> whenever required.
+        
+        <!-- <em> or <i> tag makes the content emphasized or italic. It is used to see the contents with additional focus-->
+        
+        <!-- BlockQuote Element -->
+        <!--<blockquote style="font-family: cursive; font-size: 17px; letter-spacing: 2px; border: 2px solid blue; color: brown">-->
+        <blockquote>
+            Online resources are not always validated. You have to check it first. And at the time of using it, you have to see the appearance of the contents by yourself.
+        </blockquote>
+        
+                        </div>
+            <!-- second Container-->    
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    It is recommended that material be addressed in the following order along with the following week division: <br>
+        <!--<ol><!-- This is OrderedList. All the list items will be listed with numbers from 1 to infinite
+            <li>Introduction to the Topics of Web</li
+            <li>HTML/CSS</li>
+            <li>JavaScript/JQuery</li>
+            <li>AJAX</li>
+            <li>ReactJS</li>
+        </ol>-->
+        <meter value="16" min="0" max="16">16</meter> 16 days of classes in web develoment<br>
+        <meter value="1" min="0" max="16">1</meter> 1 days of classes for introduction to web programming<br>
+            <meter value="7" min="0" max="16">7</meter> 7 days of classes for HTML/CSS<br>
+            <meter value="5" min="0" max="16">5</meter> 5 days of classes for JavaScript and its features<br>
+            <meter value="2" min="0" max="16">4</meter> 4 days of classes for ReactJS<br>
+        
+        <progress value="20" max="100">20</progress> 20% of course contents are covered.
+             <br>
+            <div class="inline_box">
+                
+                <img class="float-end" src="images/vanier_inline.png" alt="Vanier College Continuing Education logo" width="100px">
+                <p>
+                THis image shows the logo of vanier college continuing education 
+          </p>
+        </div>
+            
+        <h4>Assessments</h4>
+        For exams, it is recommended to have a combination of written and lab exam. In addition to that, the teacher will ensure the following competencies:
+        <ul> <!-- UnOrdered List.. Its the beginning declaration about the upcoming list
+Inside the list, each element need to be surrounded by the <li> tag-->
+            <li>Problem Solving</li>
+            <li>Lecture</li>
+            <li>Project-Based Learning</li>
+            <li>Brainstorming</li>
+            <li>Modeling/Demonstration</li>
+        </ul>
+
+                </div>
+            <!-- Third Container-->    
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                
+                    <h2 id="eval&ass">Assesment &amp; Evaluation</h2>
+        <dl><!-- This is description list. WE are going to add a term and follow-by definition structure in the HTML page. For that, we need to use Description List-->
+            <dt> <!-- represents term/phrase tag. The short section will be added here-->
+                Late Arrival
+            </dt>
+            <dd> <!-- This is detailed description of the term we have added before. In this place, we are going to put the longer description which will explain the term -->
+                If a student arrives late (after the scheduled class time), the instructor has the right to refuse entry until following the break.
+            </dd>
+            <dt>Missing Evaluation </dt>
+            <dd>If a student misses a summative evaluation, he/she must justify their absence with a medical note within 3 days of the missed evaluation. Failure to do so will result in zero.</dd>
+            <dt>Class Attendance</dt>
+            <dd>Attendance is done orally during the class. Zoom log does not count as participation. Attendance can be done at any time in the classroom or multiple times. Not being responsive to the instructor when asked is considered an absence from the session.</dd>
+        </dl>
+                   <h4>In-Class Notes and Codes<sup>&copy;</sup></h4>
+        will be provided throughout the semester. The class notes are registered under the Vanier College<sub>&reg;</sub> properties.<br>
+        The class codes, examples and class recordings are going to be provided in <a href="https://github.com/Kawser-nerd/Front-End-Programming-Summer-2023">GitHub</a> and <a href="https://youtube.com/playlist?list=PLwKpGi8r7u0TT9Wrv0XkXbkIxHm-O-iNz">Youtube</a> respectively.
+
+                    
+                </div>
+                
+                
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="table-responsive">
+                    <table class="table-striped table-hover " border="2">
+                <caption> Inhabitants in Building 17, 5795 Cote Des Neiges </caption>
+                
+                        <tr> <!-- Row Element in a table -->
+                    <th id="FamilyNo"> Family No</th>
+                    <th id="Name"> Name</th>
+                    <th id="DoB"> Date of Birth</th>
+                    <th id="DoD"> Date of Dead</th>
+                </tr>
+                
+                <tr>
+                    <td headers="FamilyNo" rowspan="4">Family One</td>
+                    <td headers="Name">Bob</td>
+                    <td headers="DoB">17-05-1959</td>
+                    <td headers="DoD">18-09-2020</td>   			
+                </tr>
+                <tr >
+                    <td header="Name" class="td3">Maria</td>
+                    <td headers="DoB" colspan="2">14-07-1964 -	</td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td headers="Name">Charles</td>
+                    <td headers="DoD" colspan="2">14-02-1982 -</td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td headers="Name">Charlie</td>
+                    <td headers="DoB">14-11-1984</td>
+                    <td headers="DoD">27-08-2022</td>
+                </tr>
+                <tr>
+                    <td headers="FamilyNo" rowspan="3">Family Two</td>
+                    <td headers="Name">Robert</td>
+                    <td headers="DoB" colspan="2">25-12-1976 -</td>
+                    
+                </tr>
+                <tr>
+                    <td headers="Name">Christine</td>
+                    <td headers="DoB">24-10-1978</td>
+                    <td headers="DoD">21-02-2023</td>
+                </tr>
+                <tr>
+                    
+                    <td headers="Name">Fernado</td>
+                    <td headers="DoD" colspan="2">24-06-2001 -</td>
+                    
+                </tr>
+            </table>
+                        </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <p>Audio Controls</p>
+                    <audio controls controlsList="nodownload">
+                        <source src="multimedia/Unstoppable.mp3" type="audio/mp3">
+                        <a href="multimedia/Unstoppable.mp3"> Audio File Download</a>
+                    </audio>
+                    
+                    <p>Video Controls</p>
+                    <video width="300px" height="200px" controls poster="images/earth.png">
+                        <source src="multimedia/earthVideo.mp4" type="video/mp4">
+                        <source src="multimedia/earthVideo.mov" type="video/mov">
+                        <a href="multimedia/earthVideo.mov">Movie download</a>
+                    </video>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                <h2>Contact Us</h2>
+                
+                <iframe src="formHtml.html" title="Contact Us Page" width="100%" height="270px">
+                    
+                </iframe>    
+                
+                </div>
+            </section>
+            
+            <!-- Footer Block -->
+            
+        
+        </section>
+        
+    </body>
+</html>
