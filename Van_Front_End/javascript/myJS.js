@@ -13,13 +13,15 @@ document.write("        "); // this is to put spaces
 document.write("variable two value " + "&nbsp; &nbsp;" + two); // this is string concatenation
 document.write("        "); // this is to put spaces
 
+
 // Addition
+/*
 function addition(){
 //document.write(linebreak); // this is for newline
 result= one + two;
 //document.write('addition result is: ' + result);
     
-// glue to the HTML page
+ glue to the HTML page
 document.getElementById("resultArea").innerHTML="<p> Addition Result is "+ result + "</p>";
 }
 // horizontal line
@@ -44,6 +46,7 @@ document.write('multiplication result is: ' + result);
 
 
 /* Functions in JavaScript */
+
 function sayHello(){
     
     //document.write(linebreak);
@@ -53,8 +56,88 @@ function sayHello(){
     
 }
 
+function addition(){
+    result = one + two; // this will perform addition
+    
+    document.getElementById("resultArea").innerHTML=
+        "<p>Addition Result &nbsp;" 
+        +result +
+        "</p>";
+}
+
+function substraction(){
+    
+    result = one - two; // this will perform addition
+    
+    document.getElementById("resultArea").innerHTML=
+        "<p>Substraction Result &nbsp;" 
+        +result +
+        "</p>";
+
+}
+
+function multiplication(){
+    result = one * two; // this will perform addition
+    
+    document.getElementById("resultArea").innerHTML=
+        "<p>Multiplication Result &nbsp;" 
+        +result +
+        "</p>";
+}
+
+function backendJS(){
+    document.getElementById("resultArea").innerHTML=
+        "<h1> JavaScript Page</h1>"+
+        "<p> This paragraph/div is updating from JS</p>";
+}
 
 
+/* User Object */
+
+var user={
+    /*properties*/
+    /*Key value pair*/
+    name: 'Nafi',
+    
+    email: 'kwnafi@yahoo.com',
+    status: 'instructor',
+    information: function() {
+        return one + 12;
+    }
+    
+};
+
+function userInfor(){
+    
+    
+    document.getElementById('userInfo').innerHTML= 
+        "<p>"+
+        "User "+ user.name + " &nbsp;"
+    + "Email " + user.email + " &nbsp;"
+    + "Status " + user.status + " &nbsp;"
+    + "<br>Function Output " + user.information 
+        +"</p>";
+    
+}
+
+
+function results(){
+        var x = document.getElementById('varone').value;
+        //var val = x.elements[0].value;
+        
+        
+    /*
+    Decision Structure
+    */
+    
+    if(x < 60){
+        document.getElementById('res').innerHTML="<p> Fail </p>";
+    }
+    else{
+        document.getElementById('res').innerHTML="<p> Pass </p>";
+    }
+    
+}
 
 
 

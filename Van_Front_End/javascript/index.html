@@ -10,14 +10,26 @@
         
     </head>
     <body>
-        <div id="resultArea">
-            <p> Result Area </p>
+        
+        <div>
+            <form id="frm1">
+               Enter Result <input type="text" id="varone">
+            </form>
+            <p id="res"></p>    
+        </div>
+        
+        <div id="resultArea"  onmouseover="backendJS()"> <!-- This div is going to be updated from BackEnd Javascript-->
+            
+            <!-- To catch/Relate the div part with the backend javascript, we need to put either id or class name with each HTMl element and need to cature that from BackEnd JavaScript -->
+            
+            <p> Result Area without JavaScript</p>
         </div>
         <br>
         <input type="button" onclick="sayHello()" value="Click Me">
-        <input type="button" onclick="addition()" value="Addition">
+        <input type="button"  onclick="addition()" value="Addition">
         <input type="button" onclick="substraction()" value="Substraction">
         <input type="button" onclick="multiplication()" value="Multiplication">
+        <input type="button" onclick="results()" value="Result">
         <!-- Onclick is the event itself. It trigger the button click event and active that function when the button got clicked -->
     </body>
 <!-- Best section to put js-->        
