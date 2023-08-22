@@ -1,5 +1,8 @@
 /* This section will work with the JavaScript variables, Operators and increment and decrement operation with linebreak*/
 
+ 
+
+
 var one=7; // varibales in javascript are immutable. That means the value of the variables will be updated if you change it once. Except const variable, which is mutable, others are always immutable.
 var two=5;
 var result=0;
@@ -139,11 +142,77 @@ function results(){
     
 }
 
+function compare(){
+    var x = document.getElementById('varone').value;
+    var y = document.getElementById('vartwo').value;
+    
+    if(x==y){
+        document.getElementById('res').innerHTML="<p> variable "
+        + x + " is similar to variable " + y + 
+        "</p>";
+    }
+    else if(x>y){
+        document.getElementById('res').innerHTML="<p> variable "
+        + x + " is greater than variable " + y + 
+        "</p>";
+    }
+    else{
+        document.getElementById('res').innerHTML="<p> variable "
+        + x + " is smaller to variable " + y + 
+        "</p>";
+    }
+}
 
 
+function total(){
+    var x = document.getElementById('varone').value;
+    var y = document.getElementById('vartwo').value;
+    var z = document.getElementById('varthree').value;
+    
+    
+    // result is the global variable
+    //parseInt/parseFloat
+    // We need to parse the value given in textboxes to 
+    // covert the value from Regular String to integer/float
+    // value. Once we convert, we can perform arithmatic 
+    // operations with them
+    
+    // float will allow use to get the decimal value from textBoxes whether int will allow us only values before decimal.
+    
+    result= parseInt(x) + parseInt(y) + parseInt(z);
+    
+    document.getElementById('res').innerHTML = 
+        "<p>"+
+        "Total Values+ " + result +
+        "</p>";
+}
+
+/* Structure of For Loop
+
+Syntax:-->  for(counter=initialize; condition with counter; counterIncrement/ counterDecrement)
+
+*/
 
 
-
+function pyramid(){
+    // get the row number
+    var rows = document.getElementById('rowsno').value;
+    
+    var stars=''; // need a local value which will track the stars
+    
+    // Pyramid Construction
+    for(row=1; row<=rows; row++){
+        for(col=1; col<=row; col++){
+            stars+='*';
+        }
+        stars+='<br>';
+    }
+    
+    document.getElementById('pyramidSec').innerHTML=
+        
+        "<p>" + stars +"</p>";
+    
+}
 
 
 

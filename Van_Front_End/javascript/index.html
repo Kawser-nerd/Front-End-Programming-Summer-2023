@@ -7,15 +7,21 @@
         <script src="myJS.js"> // External Script
           /*  document.write('Welcome to JS');// document is the object which holds the full html/css page. We need to call that object to hold the entities of html pages.*/
         </script>
+        <link rel="stylesheet" href="myCSS.css" type="text/css">
         
     </head>
     <body>
         
         <div>
             <form id="frm1">
-               Enter Result <input type="text" id="varone">
+               Enter Variable One <input type="text" id="varone">
+                <br>
+                Enter Variable Two <input type="text" id="vartwo">
+                <br>
+                Enter Variable Three <input type="text" id="varthree">
+                
             </form>
-            <p id="res"></p>    
+            <p id="res">Total </p>    
         </div>
         
         <div id="resultArea"  onmouseover="backendJS()"> <!-- This div is going to be updated from BackEnd Javascript-->
@@ -30,8 +36,75 @@
         <input type="button" onclick="substraction()" value="Substraction">
         <input type="button" onclick="multiplication()" value="Multiplication">
         <input type="button" onclick="results()" value="Result">
+        <input type="button" onclick="compare()" value="Compare">
+        <input type="button" onclick="total()" value="Total">
         <!-- Onclick is the event itself. It trigger the button click event and active that function when the button got clicked -->
+        
+        <br>
+        <br>
+        <br>
+            
+
+        <section>
+            <div>
+                <form>
+                    Enter Number of Rows of Pyramid <input type="text" id="rowsno">
+                    <button type="button" onclick="pyramid()" >Pyramid</button>
+                </form>
+                <p id='pyramidSec'> Pyramid</p>
+            </div>
+        </section>
+        
+        <br>
+        <br>
+        
+        <section>
+        <!--Controller/ Toggle Button-->
+            <button type="button" class="pageColapse">Name</button>
+            <div class="content">
+                <p>My Name is Kawser Wazed Nafi.</p>
+            </div>
+            <button type="button" class="pageColapse">Profession</button>
+            <div class="content">
+                <p>
+                    I am a full time professor of Vanier College.
+                </p>
+            </div>
+        </section>
+     
+        
+<script>
+   // get all the classes which have pageColapse class enabled
+    
+var coll = document.getElementsByClassName("pageColapse");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+        
     </body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <!-- Best section to put js-->        
 
 </html>
